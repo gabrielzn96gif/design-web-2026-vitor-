@@ -1,113 +1,602 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+
+<html lang="pt-BR" data-theme="corporate">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Desafio – Notícias IFRN</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Vitor Gabriel | Front-end Developer</title>
+
+<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+```
+
 </head>
 
-<body>
+<body class="bg-base-200 text-base-content">
+
+```
+<!-- Cabeçalho -->
+<header class="navbar bg-base-100 shadow-md px-4 md:px-8 sticky top-0 z-50">
+
+    <div class="navbar-start">
+        <a href="#" class="text-xl md:text-2xl font-bold text-primary">
+            Vitor Gabriel
+        </a>
+    </div>
+
+    <div class="navbar-end gap-2">
+        <a href="#sobre" class="btn btn-ghost hidden sm:flex">
+            Sobre
+        </a>
+
+        <a href="#projetos" class="btn btn-ghost hidden sm:flex">
+            Projetos
+        </a>
+
+        <a href="#contato" class="btn btn-primary">
+            Contato
+        </a>
+    </div>
+
+</header>
 
 
-    <section>
-        <header>
-            <h2>Notícias</h2>
-        </header>
+<main>
 
+    <!-- Hero -->
+    <section class="hero min-h-[75vh] bg-base-200 px-6">
 
-        <article>
-            <img src="https://picsum.photos/seed/reuniao/400/200" alt="Reunião" />
-            <header>
-                <span>Reunião</span>
-                <time datetime="2026-08-31T10:00">Há 1 hora, 3 minutos</time>
-            </header>
-            <h3>Gestão e representação sindical dialogam sobre demandas dos servidores</h3>
-            <p>Encontros realizados em agosto abordaram temas relacionados ao PGD, prioridades legais, readaptação e
-                banco de horas.</p>
-        </article>
+        <div class="hero-content text-center">
 
+            <div class="max-w-3xl">
 
-        <article>
-            <img src="https://picsum.photos/seed/cultura/400/200" alt="Arte e Cultura" />
-            <header>
-                <span>Arte e Cultura</span>
-                <time datetime="2026-08-27T14:00">Há 4 dias</time>
-            </header>
-            <h3>Intercâmbio entre museus de brinquedos populares tem programação gratuita em Natal</h3>
-            <p>Atividades acontecem nesta sexta-feira (28) e sábado (29), no Centro de Tecnologia e Cultura do IFRN</p>
-        </article>
+                <div class="flex justify-center gap-2 flex-wrap mb-6">
 
+                    <span class="badge badge-primary badge-lg">
+                        Front-end Developer
+                    </span>
 
-        <article>
-            <img src="https://picsum.photos/seed/intercampi/400/200" alt="Jogos Intercampi" />
-            <header>
-                <span>Jogos Intercampi Estudantis 2026</span>
-                <time datetime="2026-08-31T09:00">Há 1 hora, 45 minutos</time>
-            </header>
-            <h3>Intercampi chega ao fim com definição das últimas medalhas</h3>
-            <p>Resultados de sexta-feira e sábado encerraram a fase final estadual</p>
-        </article>
+                    <span class="badge badge-outline badge-lg">
+                        UI Designer
+                    </span>
 
+                </div>
 
-        <article>
-            <img src="https://picsum.photos/seed/alinhamento/400/200" alt="Alinhamento" />
-            <header>
-                <span>Alinhamento</span>
-                <time datetime="2026-08-27T15:00">Há 4 dias, 1 hora</time>
-            </header>
-            <h3>Comissão de docentes realiza encontro presencial com capacitação</h3>
-            <p>Programação reúne integrantes para discutir o regimento interno e aprofundar conhecimentos sobre
-                processos relacionados à carreira docente.</p>
-        </article>
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+                    Olá, eu sou
+                    <span class="text-primary">
+                        Vitor Gabriel
+                    </span>
+                </h1>
 
+                <p class="py-6 text-base md:text-lg text-base-content/70 max-w-2xl mx-auto">
+                    Estudante de Informática para Internet apaixonado por programação
+                    e design. Gosto de criar interfaces modernas, organizadas e
+                    experiências digitais intuitivas.
+                </p>
 
-        <article>
-            <img src="https://picsum.photos/seed/campus/400/200" alt="Campus Santa Cruz" />
-            <header>
-                <span>Campus Santa Cruz</span>
-                <time datetime="2026-08-30T08:00">Há 20 horas</time>
-            </header>
-            <h3>IFRN sediou eventos sobre acessibilidade e inclusão na educação</h3>
-            <p>Programação ocorreu entre os dias 26 e 28 de agosto, no Campus Santa Cruz</p>
-        </article>
+                <div class="flex justify-center gap-3 flex-wrap">
 
+                    <a href="#projetos" class="btn btn-primary">
+                        Ver projetos
+                    </a>
 
-        <article>
-            <img src="https://picsum.photos/seed/judo/400/200" alt="Judô" />
-            <header>
-                <span>Intercampi 2026</span>
-                <time datetime="2026-08-27T16:00">Há 4 dias, 16 horas</time>
-            </header>
-            <h3>Judô estreia e futebol define classificados nos Jogos Intercampi</h3>
-            <p>Quinta-feira reúne estreia da modalidade e rodadas que encaminham as semifinais da fase final</p>
-        </article>
+                    <a href="#sobre" class="btn btn-outline">
+                        Conhecer meu perfil
+                    </a>
 
+                </div>
 
-        <article>
-            <img src="https://picsum.photos/seed/evento/400/200" alt="Evento" />
-            <header>
-                <span>Evento</span>
-                <time datetime="2026-08-28T10:00">Há 3 dias, 22 horas</time>
-            </header>
-            <h3>III Encontro de Assessores de Projetos de Ensino reúne representantes dos 22 Campi na Reitoria</h3>
-            <p>O evento promoveu formação, troca de experiências e discussões sobre a regulamentação e o acompanhamento
-                dos Projetos de Ensino no Instituto.</p>
-        </article>
+            </div>
 
+        </div>
 
-        <article>
-            <img src="https://picsum.photos/seed/jee/400/200" alt="JEE 2026" />
-            <header>
-                <span>JEE 2026</span>
-                <time datetime="2026-08-26T18:00">Há 5 dias, 12 horas</time>
-            </header>
-            <h3>Novas modalidades ampliam programação dos Jogos Intercampi nesta quarta-feira</h3>
-            <p>Segundo dia da fase final teve provas individuais, disputas coletivas e continuidade das rodadas
-                classificatórias</p>
-        </article>
     </section>
+
+
+    <!-- Sobre -->
+    <section id="sobre" class="py-20 px-6 bg-base-100">
+
+        <div class="max-w-5xl mx-auto">
+
+            <div class="text-center mb-12">
+
+                <span class="badge badge-secondary mb-3">
+                    Sobre mim
+                </span>
+
+                <h2 class="text-3xl md:text-4xl font-bold">
+                    Desenvolvimento + Design
+                </h2>
+
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+
+                <div>
+
+                    <p class="text-base-content/70 leading-relaxed mb-5">
+                        Sou estudante de Informática para Internet e tenho interesse
+                        principalmente em desenvolvimento Front-end e criação de
+                        interfaces.
+                    </p>
+
+                    <p class="text-base-content/70 leading-relaxed">
+                        Aprendo através da prática, criando projetos e estudando
+                        tecnologias como HTML, CSS, JavaScript e Tailwind CSS.
+                        Também tenho interesse em design systems, tipografia,
+                        cores, espaçamento e organização visual.
+                    </p>
+
+                </div>
+
+                <div class="flex flex-wrap gap-3 justify-center md:justify-end">
+
+                    <span class="badge badge-primary badge-lg">
+                        HTML
+                    </span>
+
+                    <span class="badge badge-secondary badge-lg">
+                        CSS
+                    </span>
+
+                    <span class="badge badge-accent badge-lg">
+                        JavaScript
+                    </span>
+
+                    <span class="badge badge-outline badge-lg">
+                        Tailwind CSS
+                    </span>
+
+                    <span class="badge badge-outline badge-lg">
+                        UI Design
+                    </span>
+
+                    <span class="badge badge-outline badge-lg">
+                        Git & GitHub
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projetos -->
+    <section id="projetos" class="py-20 px-6 bg-base-200">
+
+        <div class="max-w-6xl mx-auto">
+
+            <div class="text-center mb-12">
+
+                <span class="badge badge-primary mb-3">
+                    Portfólio
+                </span>
+
+                <h2 class="text-3xl md:text-4xl font-bold">
+                    Meus projetos
+                </h2>
+
+                <p class="mt-3 text-base-content/70">
+                    Projetos desenvolvidos durante minha aprendizagem.
+                </p>
+
+            </div>
+
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Projeto 1 -->
+                <article class="card bg-base-100 shadow-xl hover:-translate-y-1 transition-transform">
+
+                    <div class="card-body">
+
+                        <div class="flex justify-between items-start gap-3">
+
+                            <h3 class="card-title">
+                                StudyTrack
+                            </h3>
+
+                            <span class="badge badge-primary">
+                                Web
+                            </span>
+
+                        </div>
+
+                        <p class="text-base-content/70">
+                            Plataforma de estudos com notas, simulados,
+                            estatísticas, gamificação e acompanhamento
+                            do desempenho escolar.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mt-2">
+
+                            <span class="badge badge-outline">
+                                HTML
+                            </span>
+
+                            <span class="badge badge-outline">
+                                CSS
+                            </span>
+
+                            <span class="badge badge-outline">
+                                JavaScript
+                            </span>
+
+                        </div>
+
+                        <div class="card-actions justify-end mt-4">
+
+                            <a href="#" class="btn btn-primary">
+                                Ver projeto
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Projeto 2 -->
+                <article class="card bg-base-100 shadow-xl hover:-translate-y-1 transition-transform">
+
+                    <div class="card-body">
+
+                        <div class="flex justify-between items-start gap-3">
+
+                            <h3 class="card-title">
+                                Info-Web
+                            </h3>
+
+                            <span class="badge badge-secondary">
+                                Institucional
+                            </span>
+
+                        </div>
+
+                        <p class="text-base-content/70">
+                            Site desenvolvido para apresentar o curso de
+                            Informática para Internet de maneira moderna,
+                            clara e organizada.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mt-2">
+
+                            <span class="badge badge-outline">
+                                HTML
+                            </span>
+
+                            <span class="badge badge-outline">
+                                Tailwind
+                            </span>
+
+                            <span class="badge badge-outline">
+                                UI
+                            </span>
+
+                        </div>
+
+                        <div class="card-actions justify-end mt-4">
+
+                            <a href="#" class="btn btn-secondary">
+                                Ver projeto
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Projeto 3 -->
+                <article class="card bg-base-100 shadow-xl hover:-translate-y-1 transition-transform">
+
+                    <div class="card-body">
+
+                        <div class="flex justify-between items-start gap-3">
+
+                            <h3 class="card-title">
+                                Luffy Vendas
+                            </h3>
+
+                            <span class="badge badge-accent">
+                                E-commerce
+                            </span>
+
+                        </div>
+
+                        <p class="text-base-content/70">
+                            Projeto de loja virtual com produtos, carrinho
+                            e uma identidade visual própria.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mt-2">
+
+                            <span class="badge badge-outline">
+                                HTML
+                            </span>
+
+                            <span class="badge badge-outline">
+                                CSS
+                            </span>
+
+                            <span class="badge badge-outline">
+                                JavaScript
+                            </span>
+
+                        </div>
+
+                        <div class="card-actions justify-end mt-4">
+
+                            <a href="#" class="btn btn-accent">
+                                Ver projeto
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Processo -->
+    <section class="py-20 px-6 bg-base-100">
+
+        <div class="max-w-6xl mx-auto">
+
+            <div class="text-center mb-12">
+
+                <span class="badge badge-secondary mb-3">
+                    Meu processo
+                </span>
+
+                <h2 class="text-3xl md:text-4xl font-bold">
+                    Como desenvolvo meus projetos
+                </h2>
+
+            </div>
+
+
+            <div class="grid sm:grid-cols-3 gap-6">
+
+                <div class="card bg-base-200">
+
+                    <div class="card-body items-center text-center">
+
+                        <div class="text-3xl font-bold text-primary">
+                            01
+                        </div>
+
+                        <h3 class="card-title">
+                            Planejamento
+                        </h3>
+
+                        <p class="text-base-content/70">
+                            Organizo as ideias e defino a estrutura
+                            da página.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="card bg-base-200">
+
+                    <div class="card-body items-center text-center">
+
+                        <div class="text-3xl font-bold text-secondary">
+                            02
+                        </div>
+
+                        <h3 class="card-title">
+                            Design
+                        </h3>
+
+                        <p class="text-base-content/70">
+                            Trabalho com cores, tipografia,
+                            espaçamento e hierarquia visual.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="card bg-base-200">
+
+                    <div class="card-body items-center text-center">
+
+                        <div class="text-3xl font-bold text-accent">
+                            03
+                        </div>
+
+                        <h3 class="card-title">
+                            Desenvolvimento
+                        </h3>
+
+                        <p class="text-base-content/70">
+                            Transformo a ideia em uma página
+                            funcional e responsiva.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contato -->
+    <section id="contato" class="py-20 px-6 bg-base-200">
+
+        <div class="max-w-2xl mx-auto">
+
+            <div class="text-center mb-10">
+
+                <span class="badge badge-primary mb-3">
+                    Contato
+                </span>
+
+                <h2 class="text-3xl md:text-4xl font-bold">
+                    Entre em contato
+                </h2>
+
+                <p class="mt-3 text-base-content/70">
+                    Preencha o formulário para enviar uma mensagem.
+                </p>
+
+            </div>
+
+
+            <form class="card bg-base-100 shadow-xl">
+
+                <div class="card-body">
+
+                    <label class="form-control w-full">
+
+                        <div class="label">
+                            <span class="label-text font-semibold">
+                                Nome
+                            </span>
+                        </div>
+
+                        <input
+                            type="text"
+                            placeholder="Digite seu nome"
+                            class="input input-bordered w-full"
+                        >
+
+                    </label>
+
+
+                    <label class="form-control w-full mt-3">
+
+                        <div class="label">
+                            <span class="label-text font-semibold">
+                                E-mail
+                            </span>
+                        </div>
+
+                        <input
+                            type="email"
+                            placeholder="seuemail@email.com"
+                            class="input input-bordered w-full"
+                        >
+
+                    </label>
+
+
+                    <label class="form-control w-full mt-3">
+
+                        <div class="label">
+                            <span class="label-text font-semibold">
+                                Mensagem
+                            </span>
+                        </div>
+
+                        <textarea
+                            class="textarea textarea-bordered h-32 w-full"
+                            placeholder="Digite sua mensagem"
+                        ></textarea>
+
+                    </label>
+
+
+                    <div class="card-actions justify-end mt-5">
+
+                        <button type="submit" class="btn btn-primary">
+                            Enviar mensagem
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Temas -->
+    <section class="py-12 px-6 bg-base-100">
+
+        <div class="max-w-5xl mx-auto text-center">
+
+            <h2 class="text-2xl font-bold mb-2">
+                Teste os temas
+            </h2>
+
+            <p class="text-base-content/60 mb-5">
+                Esta página utiliza temas diferentes do DaisyUI.
+            </p>
+
+            <div class="flex justify-center gap-3 flex-wrap">
+
+                <button
+                    class="btn btn-primary"
+                    onclick="document.documentElement.setAttribute('data-theme', 'corporate')"
+                >
+                    Corporate
+                </button>
+
+                <button
+                    class="btn btn-outline"
+                    onclick="document.documentElement.setAttribute('data-theme', 'business')"
+                >
+                    Business
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- Footer -->
+<footer class="footer footer-center bg-neutral text-neutral-content p-8">
+
+    <aside>
+
+        <p class="font-bold text-lg">
+            Vitor Gabriel
+        </p>
+
+        <p>
+            Front-end Developer & UI Designer
+        </p>
+
+        <p class="text-sm opacity-70">
+            Desenvolvido com HTML, Tailwind CSS e DaisyUI.
+        </p>
+
+    </aside>
+
+</footer>
+```
 
 </body>
 

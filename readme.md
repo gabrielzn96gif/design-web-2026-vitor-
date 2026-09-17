@@ -1,100 +1,264 @@
-# Repositório da turma de Design Web 2026
+# Tarefa 33 — Página pessoal com DaisyUI
 
+## Sobre o projeto
 
-## 4ª Semana
+Esta página pessoal foi desenvolvida para a Tarefa 33 do módulo de Design Web do IFRN.
 
-### Passo 1 – Criar a branch da atividade
-Crie uma branch da atividade. 
-```
-git checkout -b atividade-1
-```
-### Passo 2 – Editar o arquivo index.html
-Substitua o conteúdo do <body> pelo código abaixo (ou personalize):
+O projeto apresenta meu perfil como estudante de Informática para Internet, com interesse em **desenvolvimento Front-end e UI Design**.
 
-```
-<div class="max-w-sm bg-white rounded-lg shadow-lg p-6 text-center">
-  <img src="https://picsum.photos/seed/1/100" alt="Foto de perfil" class="w-24 h-24 rounded-full mx-auto mb-4">
-  <h2 class="text-2xl font-bold text-gray-800">Seu Nome</h2>
-  <p class="text-gray-600 mt-2">Desenvolvedor Web em aprendizado</p>
-  <button class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-    Seguir
-  </button>
+A estrutura foi construída utilizando **DaisyUI sobre o Tailwind CSS**, combinando componentes prontos da biblioteca com classes utilitárias do Tailwind para criar um layout responsivo.
+
+---
+
+# Componentes DaisyUI utilizados
+
+## Navbar
+
+A `navbar` foi utilizada no cabeçalho da página.
+
+Ela contém:
+
+* Meu nome;
+* Link para a seção Sobre;
+* Link para Projetos;
+* Botão de Contato.
+
+Escolhi a `navbar` porque ela permite organizar a navegação principal de forma simples e facilita o acesso às diferentes partes da página.
+
+---
+
+## Hero
+
+O componente `hero` foi utilizado logo depois do cabeçalho.
+
+Ele apresenta:
+
+* Meu nome;
+* Minha área de interesse;
+* Badges de Front-end Developer e UI Designer;
+* Uma breve apresentação;
+* Botões para acessar outras seções.
+
+O `hero` foi escolhido porque é adequado para criar uma apresentação inicial com destaque visual.
+
+---
+
+## Badge
+
+Os componentes `badge` foram utilizados para destacar habilidades, tecnologias e categorias.
+
+Algumas das variações utilizadas são:
+
+* `badge-primary`;
+* `badge-secondary`;
+* `badge-accent`;
+* `badge-outline`.
+
+Eles aparecem nas seções de apresentação e projetos.
+
+---
+
+## Card
+
+Foram utilizados pelo menos três cards completos na seção de projetos.
+
+Os projetos apresentados são:
+
+1. **StudyTrack**
+2. **Info-Web**
+3. **Luffy Vendas**
+
+Cada card utiliza a estrutura:
+
+```html
+<div class="card">
+    <div class="card-body">
+        ...
+    </div>
 </div>
 ```
 
-## Passo 3 – Commit e push
+Também foram utilizados cards adicionais na seção "Como desenvolvo meus projetos".
+
+---
+
+## Button
+
+Foram utilizados diferentes estilos de botões DaisyUI.
+
+Entre eles:
+
+* `btn-primary`;
+* `btn-secondary`;
+* `btn-accent`;
+* `btn-outline`;
+* `btn-ghost`.
+
+Os botões são utilizados para navegação, acesso aos projetos, contato e alteração do tema.
+
+---
+
+## Input
+
+O formulário de contato utiliza os componentes `input` do DaisyUI.
+
+Foram adicionados campos para:
+
+* Nome;
+* E-mail.
+
+Também foi utilizado o componente `textarea` para a mensagem.
+
+---
+
+## Footer
+
+O componente `footer` foi utilizado no final da página para apresentar o nome, a área de atuação e as tecnologias utilizadas no desenvolvimento.
+
+---
+
+# Justificativa das escolhas
+
+## Navbar + Hero
+
+Escolhi combinar `navbar` e `hero`.
+
+A `navbar` organiza a navegação principal, enquanto o `hero` funciona como uma apresentação inicial mais destacada.
+
+Essa combinação permite separar a função de navegação da apresentação do perfil.
+
+## Cards
+
+Escolhi utilizar `card` para os projetos porque cada projeto possui informações próprias.
+
+O card permite organizar:
+
+* Nome do projeto;
+* Categoria;
+* Descrição;
+* Tecnologias;
+* Botão de ação.
+
+Dessa forma, os projetos ficam visualmente separados e fáceis de comparar.
+
+## Badges
+
+Os badges foram utilizados para representar tecnologias e categorias de forma rápida.
+
+Eles ocupam pouco espaço e permitem identificar as principais características de cada projeto.
+
+---
+
+# Uso do Tailwind CSS
+
+O DaisyUI fornece os componentes principais, mas algumas classes do Tailwind foram utilizadas para complementar o layout.
+
+## Responsividade
+
+Foram utilizadas classes como:
+
+```text
+sm:flex
+md:grid-cols-2
+lg:grid-cols-3
 ```
-git add index.html
-git commit -m "adiciona card de perfil estilizado com Tailwind"
-git push origin atividade-1
+
+Essas classes permitem adaptar o layout para diferentes tamanhos de tela.
+
+A seção de projetos, por exemplo, utiliza:
+
+```html
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 ```
 
-### Passo 4 – Enviar o link no Google Sala de Aula
-- No GitHub, vá até seu repositório fork.
-- No seletor de branches, escolha atividade-1.
-- Copie a URL (ex: https://github.com/SEU_USUARIO/turma-design-web/tree/atividade-1).
-- Cole esse link no campo de entrega da tarefa.
+Assim, a quantidade de colunas muda de acordo com o tamanho da tela.
 
+## Espaçamento
 
-## 3ª Semana 
+Também foram utilizadas classes como:
 
-Fizemos algumas atividades, focados no Github. Criamos e clonamos nosso repositório principal.
-
-### Passo 1 – Fork do repositório
-
-- Acesse: https://github.com/professor/turma-design-web
-- Clique no botão Fork (canto superior direito). Isso criará uma cópia na sua conta. 
-
-### Passo 2 – Clonar o fork
-Abra o terminal (Git Bash, PowerShell ou terminal integrado do VS Code) e execute
-
-```
-git clone https://github.com/SEU_USUARIO/turma-design-web.git
-cd turma-design-web
+```text
+px-6
+py-20
+gap-6
+max-w-6xl
+mx-auto
 ```
 
+Essas classes foram utilizadas para controlar espaçamento, largura e posicionamento dos elementos.
 
+---
 
-Arquivo de codigo compartilhado
+# Temas
 
-## 2ª Semana 
+A página utiliza o atributo:
 
-### Cartão de Apresentação – Bruno Nakamura
+```html
+<html lang="pt-BR" data-theme="corporate">
+```
 
-Projeto didático para ensinar a integração entre **HTML semântico** e **SCSS** (pré-processador CSS).
+Foram utilizados dois temas:
 
-## Estrutura
+* `corporate`
+* `business`
 
-projeto/
+A página possui dois botões que permitem testar os temas diretamente no navegador.
 
-├── index.html 
+```javascript
+document.documentElement.setAttribute('data-theme', 'corporate')
+```
 
-├── scss/
+e:
 
-└── style.scss 
+```javascript
+document.documentElement.setAttribute('data-theme', 'business')
+```
 
-└── css/
+## Reflexão sobre os temas
 
-└── style.css # Arquivo gerado pelo SCSS (não edite jamais ou vai perder tudo para sempre)
+O tema **corporate** ficou mais coerente com a proposta da página porque apresenta uma aparência adequada para um portfólio profissional.
 
+O tema **business** também funciona corretamente e demonstra como os componentes DaisyUI podem mudar sua aparência sem precisar alterar individualmente as cores dos componentes.
 
-## Como usar
+---
 
-1. **Clone ou baixe** os arquivos.
-2. **Compile o SCSS** para CSS:
-   - Com o Sass instalado: `sass scss/style.scss css/style.css --watch`
-   - Ou use a extensão "Live Sass Compiler" no VS Code.
-3. **Abra** o `index.html` no navegador.
+# Responsividade
 
-## Personalize
+A página foi desenvolvida para funcionar em:
 
-- **Cores**: altere as variáveis no início do `style.scss` (`$color-primary`, `$color-secondary`, etc.).
-- **Imagem**: substitua a URL placeholder (`https://via.placeholder.com/...`) pelo seu próprio avatar.
-- **Conteúdo**: edite o HTML para mudar texto, tecnologias e links.
+* Celulares;
+* Tablets;
+* Desktops.
 
-## Boas práticas aplicadas
+O Tailwind foi utilizado para adaptar grids, espaçamentos e elementos de navegação conforme a largura da tela.
 
-- Tags HTML semânticas (`header`, `main`, `section`, `footer`)
-- Atributos de acessibilidade (`role`, `aria-label`, `focus-visible`)
-- Responsividade com mixins (mobile-first)
-- Código SCSS organizado com variáveis e aninhamento
+Os cards dos projetos, por exemplo, passam de uma organização vertical em telas pequenas para duas ou três colunas em telas maiores.
+
+---
+
+# Tecnologias utilizadas
+
+* HTML5
+* Tailwind CSS
+* DaisyUI
+* Git
+* GitHub
+
+---
+
+# Branch
+
+```text
+feat/daisyui-tarefa33
+```
+
+---
+
+# Autor
+
+**Vitor Gabriel**
+
+Estudante de Informática para Internet
+Front-end Developer & UI Designer em formação.
+
+Projeto desenvolvido para a disciplina de Design Web — IFRN.
